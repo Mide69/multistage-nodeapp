@@ -29,6 +29,10 @@ A lightweight, production-ready Node.js application containerized using Docker m
 
 Below is the multi-stage Dockerfile used for this project:
 
+![Screenshot (59)](https://github.com/user-attachments/assets/23266a9d-3f58-4f92-a794-130c07e28075)
+![Screenshot (58)](https://github.com/user-attachments/assets/01b4f97a-4aab-4cad-9044-cdbba4b7cda0)
+
+
 ```Dockerfile
 # Stage 1: Build stage
 FROM node:18-alpine AS builder
@@ -88,7 +92,6 @@ ssh ec2-user@your-ec2-public-ip
 docker pull your-dockerhub-username/multistage-nodeapp:latest
 docker run -d -p 3000:3000 your-dockerhub-username/multistage-nodeapp:latest
 
-![Screenshot (58)](https://github.com/user-attachments/assets/6628d482-ccf4-4b14-9ad6-301f46ca3e2f)
-![Screenshot (59)](https://github.com/user-attachments/assets/ae3caadc-2b44-4ed5-848b-654bb26e90d2)
+
 
 
